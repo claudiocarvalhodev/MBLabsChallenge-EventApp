@@ -19,6 +19,7 @@
 		91463C6223F75AF8003BAF91 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6123F75AF8003BAF91 /* UIColor+Extensions.swift */; };
 		91463C6523F78FA1003BAF91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6423F78FA1003BAF91 /* SignUpViewController.swift */; };
 		91463C6923F79CA9003BAF91 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6823F79CA9003BAF91 /* AuthButton.swift */; };
+		91E39C8D23F82A5B00CABE70 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		91463C6123F75AF8003BAF91 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		91463C6423F78FA1003BAF91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91463C6823F79CA9003BAF91 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,17 +217,18 @@
 		91463C6623F79C5C003BAF91 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				91463C6723F79C6D003BAF91 /* Button */,
+				91463C6723F79C6D003BAF91 /* Buttons */,
 			);
 			path = Components;
 			sourceTree = "<group>";
 		};
-		91463C6723F79C6D003BAF91 /* Button */ = {
+		91463C6723F79C6D003BAF91 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
 				91463C6823F79CA9003BAF91 /* AuthButton.swift */,
+				91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */,
 			);
-			path = Button;
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91406C0023F6AC3E00FC3579 /* LoginViewController.swift in Sources */,
+				91E39C8D23F82A5B00CABE70 /* SocialMediaButton.swift in Sources */,
 				91463C6923F79CA9003BAF91 /* AuthButton.swift in Sources */,
 				91463C6523F78FA1003BAF91 /* SignUpViewController.swift in Sources */,
 				91463C6223F75AF8003BAF91 /* UIColor+Extensions.swift in Sources */,

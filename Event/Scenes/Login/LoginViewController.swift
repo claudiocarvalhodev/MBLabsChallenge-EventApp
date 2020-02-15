@@ -52,8 +52,6 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    // Dentro do loginContainerView
-    
     private let loginTitleLabel: UILabel = {
         let label = UILabel()
         label.text = "Login"
@@ -89,23 +87,17 @@ class LoginViewController: UIViewController {
         return button
     }()
     
-    
-    
     private lazy var separatorContainerView: UIView = {
         let view = UIView()
-        
         let stack = UIStackView(arrangedSubviews: [separatorRight, orLabel, separatorLeft])
         stack.axis = .horizontal
         stack.distribution = .equalCentering
         stack.spacing = 16
         stack.alignment = .center
-        
         view.addSubview(stack)
         stack.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 16)
-    
         return view
     }()
-    
     
     private let separatorRight: UIView = {
         let view = UIView()
@@ -131,78 +123,39 @@ class LoginViewController: UIViewController {
         return view
     }()
     
-    
     private lazy var socialMediaContainerView: UIView = {
         let view = UIView()
-        //view.backgroundColor = .eventYellow
         view.heightAnchor.constraint(equalToConstant: 70).isActive = true
-        
-        let stack = UIStackView(arrangedSubviews: [facebookContainerView, googleContainerView, linkedinContainerView])
+        let stack = UIStackView(arrangedSubviews: [facebookButton, googleButton, linkedinButton])
         stack.axis = .horizontal
         stack.distribution = .fillEqually
         stack.spacing = 16
         stack.alignment = .center
-        
         view.addSubview(stack)
         stack.anchor(top: view.topAnchor, left: view.leftAnchor, right: view.rightAnchor)
-        
         return view
     }()
     
-    private let facebookContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        view.layer.cornerRadius = 5
-        
-        view.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 2.0, opacity: 0.05)
-        
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "facebook-icon")
-        view.addSubview(imageView)
-        imageView.centerY(inView: view)
-        imageView.centerX(inView: view)
-        imageView.anchor(width: 12, height: 24)
-        
-        return view
+    private let facebookButton: SocialMediaButton = {
+        let button = SocialMediaButton(type: .system)
+        button.setImage(UIImage(named: "facebook-icon.png"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(handleShowFacebookAccess), for: .touchUpInside)
+        return button
     }()
     
-    private let googleContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        view.layer.cornerRadius = 5
-        
-        view.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 2.0, opacity: 0.05)
-        
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "google-icon")
-        view.addSubview(imageView)
-        imageView.centerY(inView: view)
-        imageView.centerX(inView: view)
-        imageView.anchor(width: 24, height: 24)
-        
-        return view
+    private let googleButton: SocialMediaButton = {
+        let button = SocialMediaButton(type: .system)
+        button.setImage(UIImage(named: "google-icon.png"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(handleShowGoogleAccess), for: .touchUpInside)
+        return button
     }()
     
-    private let linkedinContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        view.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        view.layer.cornerRadius = 5
-        
-        view.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.black, radius: 2.0, opacity: 0.05)
-        
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "linkedin-icon")
-        view.addSubview(imageView)
-        imageView.centerY(inView: view)
-        imageView.centerX(inView: view)
-        imageView.anchor(width: 24, height: 24)
-        
-        return view
+    private let linkedinButton: SocialMediaButton = {
+        let button = SocialMediaButton(type: .system)
+        button.setImage(UIImage(named: "linkedin-icon.png"), for: UIControl.State.normal)
+        button.addTarget(self, action: #selector(handleShowLinkedinAccess), for: .touchUpInside)
+        return button
     }()
-    
     
     // MARK: - Lifecycle
 
@@ -216,6 +169,18 @@ class LoginViewController: UIViewController {
     @objc func handleShowSignUp() {
         let controller = SignUpViewController()
         navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @objc func handleShowFacebookAccess() {
+        print("Access by Facebook")
+    }
+    
+    @objc func handleShowGoogleAccess() {
+        print("Access by Facebook")
+    }
+    
+    @objc func handleShowLinkedinAccess() {
+        print("Access by Facebook")
     }
     
     // MARK: - Helper Functions

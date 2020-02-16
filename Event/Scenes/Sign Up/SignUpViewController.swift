@@ -160,21 +160,21 @@ class SignUpViewController: UIViewController {
     
     private let facebookButton: SocialMediaButton = {
         let button = SocialMediaButton(type: .system)
-        button.setImage(UIImage(named: "facebook-icon.png"), for: UIControl.State.normal)
+        button.setImage(UIImage(named: "facebook-icon.png")?.withRenderingMode(.alwaysOriginal), for: UIControl.State.normal)
         button.addTarget(self, action: #selector(handleShowFacebookAccess), for: .touchUpInside)
         return button
     }()
 
     private let googleButton: SocialMediaButton = {
         let button = SocialMediaButton(type: .system)
-        button.setImage(UIImage(named: "google-icon.png"), for: UIControl.State.normal)
+        button.setImage(UIImage(named: "google-icon.png")?.withRenderingMode(.alwaysOriginal), for: UIControl.State.normal)
         button.addTarget(self, action: #selector(handleShowGoogleAccess), for: .touchUpInside)
         return button
     }()
 
     private let linkedinButton: SocialMediaButton = {
         let button = SocialMediaButton(type: .system)
-        button.setImage(UIImage(named: "linkedin-icon.png"), for: UIControl.State.normal)
+        button.setImage(UIImage(named: "linkedin-icon.png")?.withRenderingMode(.alwaysOriginal), for: UIControl.State.normal)
         button.addTarget(self, action: #selector(handleShowLinkedinAccess), for: .touchUpInside)
         return button
     }()
@@ -206,7 +206,9 @@ class SignUpViewController: UIViewController {
             let values = ["email": email, "fullname": fullname, "accountType": accountTypeIndex, "password": password] as [String : Any]
             
             Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, ref) in
-                print("Successfully registered user and saved data...")
+                guard let controller = UIApplication.shared.keyWindow?.rootViewController as? HomeViewController else { return }
+                controller.configureUI()
+                self.dismiss(animated: true, completion: nil)
             }
         }
     }

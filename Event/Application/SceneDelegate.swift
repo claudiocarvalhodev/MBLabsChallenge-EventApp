@@ -20,8 +20,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = UINavigationController(rootViewController: LoginViewController())
+        //window?.rootViewController = HomeViewController()
+        window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
+        
+        UITabBar.appearance().barTintColor = .eventGrayDark
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

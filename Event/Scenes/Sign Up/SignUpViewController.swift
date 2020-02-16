@@ -206,8 +206,8 @@ class SignUpViewController: UIViewController {
             let values = ["email": email, "fullname": fullname, "accountType": accountTypeIndex, "password": password] as [String : Any]
             
             Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, ref) in
-                guard let controller = UIApplication.shared.keyWindow?.rootViewController as? HomeViewController else { return }
-                controller.configureUI()
+                guard let controller = UIApplication.shared.keyWindow?.rootViewController as? MainTabBarController else { return }
+                controller.setupViewControllers()
                 self.dismiss(animated: true, completion: nil)
             }
         }

@@ -23,6 +23,7 @@
 		91463C6923F79CA9003BAF91 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6823F79CA9003BAF91 /* AuthButton.swift */; };
 		914A0E5323F86CEB00569BF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914A0E5223F86CEB00569BF0 /* GoogleService-Info.plist */; };
 		915F8E6523F99BFF00200882 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F8E6423F99BFF00200882 /* MainTabBarController.swift */; };
+		915F8E6823F9C43B00200882 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F8E6723F9C43B00200882 /* CreateEventViewController.swift */; };
 		91E39C8D23F82A5B00CABE70 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */; };
 		91FBB22E23F9806F008CAAED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FBB22D23F9806F008CAAED /* HomeViewController.swift */; };
 		FC45CDFD1E98259D61DDF5E2 /* Pods_EventTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549D9B8B9C946AE7AA5C8E74 /* Pods_EventTests.framework */; };
@@ -72,6 +73,7 @@
 		91463C6823F79CA9003BAF91 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		914A0E5223F86CEB00569BF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		915F8E6423F99BFF00200882 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		915F8E6723F9C43B00200882 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
 		91FBB22D23F9806F008CAAED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2221696B2AF280C83C7B16D /* Pods_Event_EventUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Event_EventUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,6 +203,7 @@
 				91406BFB23F6AA6900FC3579 /* Login */,
 				91463C6323F78F51003BAF91 /* Sign Up */,
 				91FBB22C23F9804A008CAAED /* Home */,
+				915F8E6623F9C3EC00200882 /* Create Event */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -263,6 +266,14 @@
 				915F8E6423F99BFF00200882 /* MainTabBarController.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		915F8E6623F9C3EC00200882 /* Create Event */ = {
+			isa = PBXGroup;
+			children = (
+				915F8E6723F9C43B00200882 /* CreateEventViewController.swift */,
+			);
+			path = "Create Event";
 			sourceTree = "<group>";
 		};
 		91FBB22C23F9804A008CAAED /* Home */ = {
@@ -546,6 +557,7 @@
 				91463C5E23F75A22003BAF91 /* UIView+Extensions.swift in Sources */,
 				91463C6023F75AC6003BAF91 /* UITextField+Extensions.swift in Sources */,
 				91406BC823F6A8AE00FC3579 /* SceneDelegate.swift in Sources */,
+				915F8E6823F9C43B00200882 /* CreateEventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

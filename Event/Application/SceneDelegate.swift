@@ -24,7 +24,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
         
-        UITabBar.appearance().barTintColor = .eventGrayDark
+        if let tabBarController = self.window!.rootViewController as? UITabBarController {
+            tabBarController.selectedIndex = 2
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

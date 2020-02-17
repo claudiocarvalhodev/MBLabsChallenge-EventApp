@@ -22,7 +22,7 @@ extension UIView {
         layer.backgroundColor =  backgroundCGColor
     }
     
-    func inputContainerView(image: UIImage, textField: UITextField? = nil, segmentedControl: UISegmentedControl? = nil) -> UIView {
+    func inputContainerView(image: UIImage? = nil, textField: UITextField? = nil, segmentedControl: UISegmentedControl? = nil) -> UIView {
         let view = UIView()
         
         let imageView = UIImageView()
@@ -31,8 +31,12 @@ extension UIView {
         view.addSubview(imageView)
         
         if let textField = textField {
-            imageView.centerY(inView: view)
-            imageView.anchor(left: view.leftAnchor, paddingLeft: 8, width: 24, height: 24)
+            
+            if let image = image {
+                imageView.centerY(inView: view)
+                imageView.anchor(left: view.leftAnchor, paddingLeft: 8, width: 24, height: 24)
+            }
+            
             view.addSubview(textField)
             textField.centerY(inView: view)
             textField.anchor(left: imageView.rightAnchor, bottom: view.bottomAnchor, right: view.rightAnchor, paddingLeft: 8, paddingBottom: 8)

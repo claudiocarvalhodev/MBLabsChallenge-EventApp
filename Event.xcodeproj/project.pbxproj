@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2132FC299570FA71D5CE6B75 /* Pods_Event.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAB8B5CF85174949A6AC43E8 /* Pods_Event.framework */; };
 		6E62028CBCB51B89D8376AC7 /* Pods_Event_EventUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2221696B2AF280C83C7B16D /* Pods_Event_EventUITests.framework */; };
+		9121BCA823FA97F600207C33 /* RegisterEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121BCA723FA97F600207C33 /* RegisterEventViewController.swift */; };
+		9121BCAB23FAB0C800207C33 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9121BCAA23FAB0C800207C33 /* AlertService.swift */; };
 		91406BC623F6A8AE00FC3579 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91406BC523F6A8AE00FC3579 /* AppDelegate.swift */; };
 		91406BC823F6A8AE00FC3579 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91406BC723F6A8AE00FC3579 /* SceneDelegate.swift */; };
 		91406BCF23F6A8C300FC3579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91406BCE23F6A8C300FC3579 /* Assets.xcassets */; };
@@ -53,6 +55,8 @@
 		44C1FCFD6C7C0021470F0B19 /* Pods-EventTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventTests.release.xcconfig"; path = "Target Support Files/Pods-EventTests/Pods-EventTests.release.xcconfig"; sourceTree = "<group>"; };
 		549D9B8B9C946AE7AA5C8E74 /* Pods_EventTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F43C98EE46D4283DE45532B /* Pods-EventTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventTests.debug.xcconfig"; path = "Target Support Files/Pods-EventTests/Pods-EventTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9121BCA723FA97F600207C33 /* RegisterEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEventViewController.swift; sourceTree = "<group>"; };
+		9121BCAA23FAB0C800207C33 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		91406BC223F6A8AE00FC3579 /* Event.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Event.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91406BC523F6A8AE00FC3579 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91406BC723F6A8AE00FC3579 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9121BCA923FAB0AD00207C33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9121BCAA23FAB0C800207C33 /* AlertService.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		91406BB923F6A8AE00FC3579 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 				91406BF623F6A9F300FC3579 /* Support Files */,
 				91406BF723F6AA0C00FC3579 /* Resources */,
 				91463C5C23F759F8003BAF91 /* Extensions */,
+				9121BCA923FAB0AD00207C33 /* Utils */,
 				91463C6623F79C5C003BAF91 /* Components */,
 				91406BF923F6AA4700FC3579 /* Scenes */,
 			);
@@ -272,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				915F8E6723F9C43B00200882 /* CreateEventViewController.swift */,
+				9121BCA723FA97F600207C33 /* RegisterEventViewController.swift */,
 			);
 			path = "Create Event";
 			sourceTree = "<group>";
@@ -548,9 +562,11 @@
 			files = (
 				91406C0023F6AC3E00FC3579 /* LoginViewController.swift in Sources */,
 				91E39C8D23F82A5B00CABE70 /* SocialMediaButton.swift in Sources */,
+				9121BCAB23FAB0C800207C33 /* AlertService.swift in Sources */,
 				915F8E6523F99BFF00200882 /* MainTabBarController.swift in Sources */,
 				91463C6923F79CA9003BAF91 /* AuthButton.swift in Sources */,
 				91463C6523F78FA1003BAF91 /* SignUpViewController.swift in Sources */,
+				9121BCA823FA97F600207C33 /* RegisterEventViewController.swift in Sources */,
 				91463C6223F75AF8003BAF91 /* UIColor+Extensions.swift in Sources */,
 				91FBB22E23F9806F008CAAED /* HomeViewController.swift in Sources */,
 				91406BC623F6A8AE00FC3579 /* AppDelegate.swift in Sources */,

@@ -23,10 +23,10 @@
 		91463C6223F75AF8003BAF91 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6123F75AF8003BAF91 /* UIColor+Extensions.swift */; };
 		91463C6523F78FA1003BAF91 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6423F78FA1003BAF91 /* SignUpViewController.swift */; };
 		91463C6923F79CA9003BAF91 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91463C6823F79CA9003BAF91 /* AuthButton.swift */; };
-		914A0E5323F86CEB00569BF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 914A0E5223F86CEB00569BF0 /* GoogleService-Info.plist */; };
 		915F8E6523F99BFF00200882 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F8E6423F99BFF00200882 /* MainTabBarController.swift */; };
 		915F8E6823F9C43B00200882 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 915F8E6723F9C43B00200882 /* CreateEventViewController.swift */; };
 		91E39C8D23F82A5B00CABE70 /* SocialMediaButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */; };
+		91F8907023FAF32300244425 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91F8906F23FAF32300244425 /* GoogleService-Info.plist */; };
 		91FBB22E23F9806F008CAAED /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FBB22D23F9806F008CAAED /* HomeViewController.swift */; };
 		FC45CDFD1E98259D61DDF5E2 /* Pods_EventTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 549D9B8B9C946AE7AA5C8E74 /* Pods_EventTests.framework */; };
 /* End PBXBuildFile section */
@@ -75,10 +75,10 @@
 		91463C6123F75AF8003BAF91 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		91463C6423F78FA1003BAF91 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		91463C6823F79CA9003BAF91 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
-		914A0E5223F86CEB00569BF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		915F8E6423F99BFF00200882 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		915F8E6723F9C43B00200882 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
 		91E39C8C23F82A5B00CABE70 /* SocialMediaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialMediaButton.swift; sourceTree = "<group>"; };
+		91F8906F23FAF32300244425 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		91FBB22D23F9806F008CAAED /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		B2221696B2AF280C83C7B16D /* Pods_Event_EventUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Event_EventUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAB8B5CF85174949A6AC43E8 /* Pods_Event.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Event.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,7 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				91406BD323F6A8C300FC3579 /* Info.plist */,
-				914A0E5223F86CEB00569BF0 /* GoogleService-Info.plist */,
+				91F8906F23FAF32300244425 /* GoogleService-Info.plist */,
 			);
 			path = "Support Files";
 			sourceTree = "<group>";
@@ -432,7 +432,7 @@
 			files = (
 				91406BD223F6A8C300FC3579 /* LaunchScreen.storyboard in Resources */,
 				91406BCF23F6A8C300FC3579 /* Assets.xcassets in Resources */,
-				914A0E5323F86CEB00569BF0 /* GoogleService-Info.plist in Resources */,
+				91F8907023FAF32300244425 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
